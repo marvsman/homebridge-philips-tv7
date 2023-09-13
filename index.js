@@ -177,12 +177,6 @@ class PhilipsTvAccessory {
                 this.services.push(inp);
             })
         })
-
-        inputs.forEach((item, index) => {
-            const input = this.createInputSource(item.name, item.name, index);
-            this.tvService.addLinkedService(input);
-            this.services.push(input);
-        });
     }
 
     // registerAmbilightService = () => {
