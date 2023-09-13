@@ -112,8 +112,8 @@ class PhilipsTvAccessory {
         const ambService = new Service.Television(name, "Television");
         const power = ambService.getCharacteristic(Active);
 
-        tvService.setCharacteristic(ConfiguredName, name);
-        tvService.setCharacteristic(SleepDiscoveryMode, SleepDiscoveryMode.ALWAYS_DISCOVERABLE);
+        ambService.setCharacteristic(ConfiguredName, name);
+        ambService.setCharacteristic(SleepDiscoveryMode, SleepDiscoveryMode.ALWAYS_DISCOVERABLE);
 
         power.on('get', this.PhilipsTV.ambilight.getState);
         power.on('set', (value, callback) => {
