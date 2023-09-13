@@ -20,6 +20,7 @@
     "homebridge": ">=0.2.0"
   },
   "dependencies": {
+    "prettier": "^3.0.3",
     "request": "^2.88.2",
     "wake_on_lan": "^1.0.0"
   }
