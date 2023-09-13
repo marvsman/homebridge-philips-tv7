@@ -3,7 +3,7 @@ const pkg = require('./package.json');
 const PhilipsTV = require('./PhilipsTV.js');
 const AmbilightModes = require('./AmbilightModes');
 const pluginName = pkg.name;
-const accessoryName = 'PhilipsTV';
+const accessoryName = 'PhilipsTV2';
 
 class PhilipsTvAccessory {
 
